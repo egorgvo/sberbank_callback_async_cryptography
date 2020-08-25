@@ -1,1 +1,1 @@
-# sberbank_callback_async_cryptography
+# Sberbank signature verification using async cryptography

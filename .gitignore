@@ -5,3 +5,7 @@ venv
 # Python
 __pycache__/
 .idea/
+
+build/
+dist/
+sberbank_callback_async_cryptography.egg-info
