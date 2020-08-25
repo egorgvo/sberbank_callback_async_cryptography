@@ -37,10 +37,15 @@ def params_get_message(params):
     return f'{message};'.encode()
 
 
-def verify_signature(public_key, signature, params=None, **kwargs):
+def verify_signature(public_key, signature, params=None, raise_exception=False, **kwargs):
     if not params:
         params = {}
     params.update(kwargs)
     message = params_get_message(params)
-    signature = codecs.decode(signature.lower(), 'hex')
+    try:
+        signature = codecs.decode(signature.lower(), 'hex')
+    except Exception as exc:
+        if raise_exception:
+            raise exc
+        return False
     return public_key_verify_signature(public_key, signature, message)
