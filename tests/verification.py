@@ -6,11 +6,11 @@ import codecs
 import unittest
 from tempfile import NamedTemporaryFile
 
-from sberbank_callback_async_cryptography.keys_generation import (generate_keys, certificate_x509_build, x509_certificate_write_to_file,
-                                                                  private_key_write_to_file, public_key_write_to_file)
-from sberbank_callback_async_cryptography.sberbank_tools import verify_signature, params_string_to_dict, params_get_checksum
-from sberbank_callback_async_cryptography.signature import (private_key_import_from_file, private_key_sign_message,
-                                                            public_key_import_from_x509_certificate_string, public_key_import_from_x509_certificate_file)
+from sb_async_cryptography.keys_generation import (generate_keys, certificate_x509_build, x509_certificate_write_to_file,
+                                                   private_key_write_to_file, public_key_write_to_file)
+from sb_async_cryptography.sberbank_tools import verify_signature, params_string_to_dict, params_get_checksum
+from sb_async_cryptography.signature import (private_key_import_from_file, private_key_sign_message,
+                                             public_key_import_from_x509_certificate_string, public_key_import_from_x509_certificate_file)
 
 
 class VerificationTests(unittest.TestCase):

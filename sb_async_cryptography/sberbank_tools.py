@@ -6,7 +6,7 @@ import codecs
 from copy import copy
 from itertools import chain
 
-from sberbank_callback_async_cryptography.signature import public_key_verify_signature
+from sb_async_cryptography.signature import public_key_verify_signature
 
 
 def params_get_checksum(params):
