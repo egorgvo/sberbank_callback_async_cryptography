@@ -13,7 +13,7 @@ Python version that has been used while coding is 3.8. Other versions has not be
 ## Installation
 
 ```bash
-pip install -i sberbank_callback_async_cryptography
+pip install -i sberbank_async_cryptography
 ```
 
 ## Flask example
